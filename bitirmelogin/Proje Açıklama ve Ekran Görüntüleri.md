@@ -6,5 +6,6 @@ Kullanıcı bilgileri NoSQL kullanılarak "user_data,json" dosyasına kaydettiri
 Proje 202503206 Ömer Mete DURUEL tarafından yapıldı.<br>
 </div> 
 <h1>Ekran Görüntüleri</h1>
-![Bitirmelogin1](https://github.com/Iskenderun-Technical-University/bitirme2-login-vue-Omer-Mete-DURUEL/assets/84865874/973cb61e-a24c-43a3-a9b6-c9f52673b6ca)
-![bitirmelogin2](https://github.com/Iskenderun-Technical-University/bitirme2-login-vue-Omer-Mete-DURUEL/assets/84865874/03c728e5-b186-4a13-bbec-d19865996061)
+ <img src="https://github.com/Iskenderun-Technical-University/bitirme2-login-vue-Omer-Mete-DURUEL/assets/84865874/973cb61e-a24c-43a3-a9b6-c9f52673b6ca">
+ <br>
+  <img src="https://github.com/Iskenderun-Technical-University/bitirme2-login-vue-Omer-Mete-DURUEL/assets/84865874/03c728e5-b186-4a13-bbec-d19865996061">
