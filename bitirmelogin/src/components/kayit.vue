@@ -43,7 +43,7 @@ export default {
             password: this.password
           });
           console.log(response.data);
-          // Başarılı kayıt durumunda işlem yapabilirsiniz
+          
         } catch (error) {
           console.error('Kayıt işlemi başarısız:', error.response.data);
           this.errorMessage = "Kayıt işlemi başarısız oldu";

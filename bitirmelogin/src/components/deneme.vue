@@ -30,13 +30,13 @@
     },
     methods: {
       login() {
-  // Kullanıcı adı ve şifre doğrulaması
+  
     if (this.username.trim() === "" || this.password.trim() === "") {
     this.errorMessage = "Kullanıcı adı ve şifre gereklidir";
     return;
      }
 
-  // Güvenlik kodu doğrulaması
+  
     if (this.securityCode === this.securityCodeValue.toString()) {
     alert("Giriş başarılı!");
      } else {
