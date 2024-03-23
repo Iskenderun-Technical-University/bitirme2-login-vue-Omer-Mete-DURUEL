@@ -9,7 +9,7 @@
       <input type="email" placeholder="E-POSTA ADRESİ" v-model="email" />
       <input type="password" placeholder="ŞİFRE BELİRLEYİN" v-model="password" />
       <button @click="register">KAYIT OL</button>
-      <button @click="changeComponent('giris')">Giriş Yap</button>
+      <button @click="goBack">GİRİŞ YAP</button>
       <div v-if="errorMessage" style="color: red;">{{ errorMessage }}</div>
     </div>
   </div>
@@ -58,9 +58,9 @@ export default {
       }
       return true;
     },
-    changeComponent(component) {
-      this.$emit('back', component);
-    },
+    goBack() {
+      this.$router.push('/giris');
+    }
   }
 
 };
@@ -81,6 +81,7 @@ export default {
   }
   
   h1 {
+    color: #fffb00;
     margin-top: 2rem;
     font-size: 2rem;
   }
@@ -106,14 +107,14 @@ export default {
   button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  background-color: #ff1e00;
-  color: #fff;
+  background-color: #fffb00;
+  color: #000000;
   border: none;
   cursor: pointer;
   display: inline-block; 
 }
 
   button:hover {
-    background-color: #b33300;
+    background-color: #fcfa90;
   }
 </style>
