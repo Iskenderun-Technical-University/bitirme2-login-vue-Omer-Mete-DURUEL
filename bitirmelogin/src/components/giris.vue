@@ -9,7 +9,7 @@
       <img class="captcha-image" :src="captchaImage" @click="refreshCaptcha" />
       <button @click="login">GİRİŞ</button>
       <button @click="forgotPassword">Şifremi Unuttum</button>
-      <button @click="changeComponent('kayit')">Kayıt Ol</button>
+      <button @click="goToRegister">KAYIT OL</button>
       <div v-if="errorMessage" style="color: red;">{{ errorMessage }}</div>
     </div>
     <div class="modal" v-if="isForgotPasswordModalOpen">
@@ -63,6 +63,7 @@ export default {
         console.log("Giriş başarılı");
         this.errorMessage = ""; // Hata mesajını temizle
         alert("Başarılı şekilde giriş yapıldı!"); // Başarılı giriş uyarısı
+        this.$router.push('/dashboard');
       } else {
         this.errorMessage = "Kullanıcı adı veya şifre hatalı!";
       }
@@ -92,8 +93,8 @@ forgotPassword() {
       this.captchaImage = `https://via.placeholder.com/150x50.png?text=${captchaCode}`;
     },
     
-    changeComponent(component) {
-      this.$emit('register', component);
+    goToRegister() {
+      this.$router.push('/kayit');
     }
     
   }
@@ -117,6 +118,7 @@ forgotPassword() {
 }
 
 h1 {
+  color: #fffb00;
   margin-top: 2rem;
   font-size: 2rem;
 }
@@ -137,14 +139,14 @@ input[type="password"] {
 button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  background-color: #ff1e00;
-  color: #fff;
+  background-color: #fffb00;
+  color: #000000;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #b33300;
+  background-color: #fcfa90;
 }
 
 .captcha-image {
