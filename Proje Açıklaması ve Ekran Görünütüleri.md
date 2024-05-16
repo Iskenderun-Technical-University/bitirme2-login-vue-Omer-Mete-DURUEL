@@ -1,5 +1,5 @@
 <h1>Proje Açıklaması</h1>
-<div>Proje vue.js dili kuullanılarak yazılmıştır<br>
+<div>Proje vue.js dili kullanılarak yazılmıştır<br>
 Projede 'kayit.vue've 'giriş.vue' olmak üzere 2 adet Component kullanıldı.<br>
 Giriş sayfasında reCaptcha scriptinden yararlanıldı.<br>
 Kullanıcı bilgileri NoSQL kullanılarak "user_data,json" dosyasına kaydettirildi ve giriş yapılırken kontroller bu dosya üzerinden sağlandı.<br>
