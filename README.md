@@ -1,3 +1,4 @@
+<h1>Not: Her farklı sayfa için farklı branch kullanıldı, ilk sayfa main ikinci sayfa update üçüncü sayfa ise articleapplication adlı branchte üstüne ekleyerek yüklendi.<h1>
 <h1>Proje Açıklaması</h1>
 <div>Proje vue.js dili kullanılarak yazılmıştır<br>
 Projede 'kayit.vue've 'giriş.vue' olmak üzere 2 adet Component kullanıldı.<br>
